@@ -16,9 +16,11 @@ function myFunction() {
     var dateTwo = toGetDay.getDay(date2.value);
     if (weekday[dateOne] === weekday[dateTwo]) {
         weekday[dateOne].classList.add("same")
+    } else {
+        weekday[dateOne].classList.add("col1")
+        weekday[dateTwo].classList.add("col2")
     }
-    weekday[dateOne].classList.add("col1")
-    weekday[dateTwo].classList.add("col2")
+
     setTimeout(function () {
         weekday[dateOne].classList.remove("same");
         weekday[dateOne].classList.remove("col1");

@@ -14,7 +14,7 @@ function myFunction() {
     var weekday = [sunday, monday, tuesday, wednesday, thursday, friday, saturday]
     var dateOne = toGetDay.getDay(date1.value);
     var dateTwo = toGetDay.getDay(date2.value);
-    weekday.forEach((dayElem) => {
+    weekday.forEach(function(dayElem){
         dayElem.classList.remove("same");
         dayElem.classList.remove("col1");
         dayElem.classList.remove("col2");
